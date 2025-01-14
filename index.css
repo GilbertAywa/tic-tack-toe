@@ -1,0 +1,128 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: arial;
+      }
+      
+      body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+        background-color: #3d3d3d;
+        position: relative;
+      }
+
+      .prompt-container{
+          background-color: #ffffff55;
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          transition: fade 1s ease;
+      }
+
+
+      .prompt{
+        background-color: black;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 50px 0 50px;
+        color: white;
+      }
+
+      .prompt button{
+        width: 70px;
+        height: 25px;
+        font-size: medium;
+        font-weight: bold;
+        margin-inline: 10px;
+        margin-block: 10px;
+      }
+      
+
+      h1{
+        color: #ff0000;
+      }
+
+      h3{
+       color: #ffffff;
+      }
+
+      hr{
+        width: 380px;
+        background-color: #ffffff;
+        margin-bottom: 20px;
+      }
+      .button-grid{
+        border: 3px solid #000000;
+        display: grid;
+        grid-template-columns: repeat(3,100px);
+        gap: 4px;
+        padding: 4px;
+        border-radius: 10px;
+      }
+
+      .button-grid button{
+        height: 100px;
+        border: 2px solid #ff0000;
+        border-radius: 5px;
+        font-size: 40px;
+        font-weight: bold;
+        background-color: gold;
+        cursor: pointer;
+      }
+
+      .score{
+        margin-top: 10px;
+        width: 320px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2px;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+
+        .score p{
+          color: white;
+          background-color: gray;
+          padding-left: 10px;
+          padding-block: 5px;
+        }
+
+      .player{
+        font-weight: bold;
+      }
+
+      .reset-btn, 
+      .auto-play-btn{
+        margin-top: 20px;
+        width: 125px;
+        height: 35px;
+        border-radius: 20px;
+        border: none;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #00ffff;
+        cursor: pointer;
+      }
+
+      .auto-play-btn{
+        background-color: gold;
+        font-size: 18px;
+      }
+
+      .action-btn{
+        display: flex; 
+        justify-content: space-evenly;
+        width: 320px;
+      }
